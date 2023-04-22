@@ -1,0 +1,52 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+
+header {
+	background-color: black;
+	color: white;
+	text-align: center;
+	height: 10vh;
+}
+
+.container {
+	display: flex;
+	flex-direction: row;
+	height: 80%;
+}
+
+
+
+nav {
+	background-color: #333;
+	height: 90vh;
+	width: 25vw;
+}
+
+nav ul {
+	list-style: none;
+	padding: 20px;
+}
+
+nav li a {
+	display: block;
+	padding: 10px;
+	color: white;
+	text-decoration: none;
+}
+
+nav li a:hover {
+	background-color: #666;
+}
+
+main {
+	background-color: white;
+	height: 90vh;
+	width: 75vw;
+	overflow-y: auto;
+}
+
+

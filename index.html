@@ -2,26 +2,27 @@
 <html lang="es">
   <head>
     <meta charset="utf-8">
-    <title>Pentest-CheatSheets</title>
+    <title>Pentesting-CheatSheets</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-WSh3BZtFjKzTxlTu08Jy+iw/Z1g+7OmWruSvGWhVoPmcCJ9+VEm1Bl8Qv4V7F5Fc5g5K5rHe2rI5x5dAzUJ9Kg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
     <header>
-      <h1>Pentest-CheatSheets</h1>
+      <div>
+        <h1>Pentesting-CheatSheets</h1>
+        <p>dgarciacavero</p>
+      </div>
       <hr>
     </header>
+    <nav>
+      <ul>
+        <li><a href="index.html" target="main-iframe">Inicio</a></li>
+        <li><a href="reversing.html" target="main-iframe">Reversing</a></li>
+        <li><a href="privilege-escalation.html" target="main-iframe">Privilege Escalation</a></li>
+      </ul>
+    </nav>
     <main>
-      <section>
-        <h2>Prueba1</h2>
-        <p>Esta es la primera sección de prueba.</p>
-        <a href="prueba1.txt"><i class="fas fa-file-alt"></i> Ver archivo</a>
-      </section>
-      <section>
-        <h2>Prueba2</h2>
-        <p>Esta es la segunda sección de prueba.</p>
-        <a href="prueba2.txt"><i class="fas fa-file-alt"></i> Ver archivo</a>
-      </section>
+      <iframe src="index.html" name="main-iframe"></iframe>
     </main>
   </body>
 </html>

@@ -1,27 +1,25 @@
 <!DOCTYPE html>
-<html lang="es">
-  <head>
-    <meta charset="utf-8">
-    <title>Pentesting-CheatSheets</title>
-    <link rel="stylesheet" type="text/css" href="index.css">
-  </head>
-  <body>
-    <header>
-      <div>
-        <h1>Pentesting-CheatSheets</h1>
-        <p>dgarciacavero</p>
-      </div>
-      <hr>
-    </header>
-    <nav>
+<html>
+<head>
+  <title>Pentesting-CheatSheets</title>
+  <link rel="stylesheet" type="text/css" href="index.css">
+</head>
+<body>
+  <div class="header">
+    <h1 class="title">Pentesting-CheatSheets</h1>
+    <p class="subtitle">dgarcia cavero</p>
+  </div>
+  <div class="container">
+    <div class="sidebar">
       <ul>
-        <li><a href="index.html" target="main-iframe">Inicio</a></li>
-        <li><a href="reversing.html" target="main-iframe">Reversing</a></li>
-        <li><a href="privilege-escalation.html" target="main-iframe">Privilege Escalation</a></li>
+        <li><a href="home.html" target="content">Inicio</a></li>
+        <li><a href="reversing.html" target="content">Reversing</a></li>
+        <li><a href="privilege-escalation.html" target="content">Privilege Escalation</a></li>
       </ul>
-    </nav>
-    <main>
-      <iframe src="index.html" name="main-iframe"></iframe>
-    </main>
-  </body>
+    </div>
+    <div class="content">
+      <iframe name="content" src="home.html"></iframe>
+    </div>
+  </div>
+</body>
 </html>

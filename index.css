@@ -1,57 +1,70 @@
+/* Estilos generales */
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
 body {
-	background-color: #ff0000;
-	color: #000;
 	font-family: Arial, sans-serif;
-	margin: 0;
-	padding: 0;
+	background-color: #fff;
+	color: #333;
 }
 
-#title {
-	font-size: 36px;
-	font-weight: bold;
-	margin: 20px;
+.header {
+	background-color: #f44336;
+	height: 20%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
 }
 
-#subtitle {
-	font-size: 24px;
-	margin-bottom: 30px;
-}
-
-#menu {
-	background-color: #ddd;
-	height: 100%;
-	left: 0;
-	position: fixed;
-	top: 0;
-	width: 150px;
-}
-
-#menu ul {
-	list-style: none;
-	margin: 0;
-	padding: 0;
-}
-
-#menu li {
-	margin: 0;
-	padding: 10px;
-}
-
-#menu li a {
+.title {
+	font-size: 2.5em;
 	color: #000;
-	display: block;
+	margin-bottom: 0.5em;
+	text-align: center;
+}
+
+.subtitle {
+	font-size: 1.5em;
+	color: #fff;
+	text-align: center;
+}
+
+.container {
+	display: flex;
+	height: 80%;
+}
+
+.sidebar {
+	background-color: #333;
+	color: #fff;
+	width: 25%;
+}
+
+.sidebar ul {
+	list-style: none;
+	padding: 1em;
+}
+
+.sidebar li {
+	margin-bottom: 0.5em;
+}
+
+.sidebar a {
+	color: #fff;
 	text-decoration: none;
+	font-size: 1.2em;
 }
 
-#menu li.active {
-	background-color: #ccc;
+.sidebar a:hover {
+	color: #f44336;
 }
 
-#iframe {
-	border: none;
-	height: 100%;
-	left: 150px;
-	position: absolute;
-	top: 0;
-	width: calc(100% - 150px);
+.content {
+	flex: 1;
+	padding: 1em;
 }

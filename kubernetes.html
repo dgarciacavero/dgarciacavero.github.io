@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Kubernetes pentesting</title>
+</head>
+<body>
+  <h1>Kubernetes pentesting</h1>
+  <ul>
+    <li>
+      <h2>Kube-hunter</h2>
+      <p>Herramienta desarrollada por <a href="https://github.com/aquasecurity/kube-hunter/" target="_blank">aquasecurity</a>: </p>
+    </li>
+    <li>
+      <h2>Comandos interesantes</h2>
+      <ul>
+        <li>Lista privilegios: kubectl auth can-i --list</li>
+        <li>Secrets: kubectl get secrets</li>
+        <li>Autenticación con token: kubectl ... --token=$TOKEN</li>
+        <li>Entrar a un pod: kubectl exec -it $POD_NAME</li>
+        <li>Crear pod malicioso (todo permitido): <a href="https://github.com/BishopFox/badPods/blob/main/manifests/everything-allowed/pod/everything-allowed-exec-pod.yaml" target="_blank">github</a></li>
+      </ul>
+    </li>
+  </ul>
+</body>
+</html>
